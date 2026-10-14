@@ -1,0 +1,666 @@
+PyTorch version: 2.8.0+cu129
+CUDA available: True
+Training device: GPU (CUDA)
+
+Using device: cuda
+GPU Name: NVIDIA GeForce RTX 4070 Laptop GPU
+GPU Memory: 8.00 GB
+
+Configuration:
+  data_dir: Spectograms
+  batch_size: 96
+  num_epochs: 50
+  learning_rate: 0.0001
+  dropout: 0.5
+  train_split: 0.8
+  random_seed: 42
+  num_workers: 0
+  model_save_path: voxceleb_cnn_lite_gpu.pth
+  use_class_percentage: 0.5
+  target_size: (256, 256)
+  early_stopping_patience: 7
+
+Spectrogram augmentation class defined
+
+Total speaker classes available: 1211
+Using 605 classes (50.0%)
+
+
+Dataset statistics:
+  Total samples: 72766
+  Number of classes: 605
+  Samples per class (avg): 120.3
+
+Class mapping saved to class_to_idx.json
+
+Training samples: 58212
+Validation samples: 14554
+
+Class distribution in training set:
+  Min samples per class: 36
+  Max samples per class: 525
+  Avg samples per class: 96.2
+
+Train batches: 607
+Validation batches: 152
+
+Sample spectrograms saved to sample_spectrograms.png
+Note: Augmentations include SpecAugment (freq/time masking), noise, and time shifts
+
+VGG16-Lite model defined
+
+Model initialized with 605 classes
+Model is on device: cuda:0
+
+Total parameters: 34,448,893
+Trainable parameters: 34,448,893
+
+Early stopping class defined
+
+Loss function: CrossEntropyLoss()
+Optimizer: Adam
+Initial learning rate: 0.0001
+
+Starting training with early stopping...
+
+Early stopping patience: 7 epochs
+================================================================================
+
+Epoch 1/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 6.0241 | Train Acc: 3.72%
+Val Loss:   5.1976 | Val Acc:   11.70%
+Epoch Time: 6.82 min | Est. remaining: 5.57 hours
+V Best model saved! (Val Acc: 11.70%)
+================================================================================
+
+Epoch 2/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 4.7999 | Train Acc: 17.13%
+Val Loss:   3.9696 | Val Acc:   31.18%
+Epoch Time: 6.97 min | Est. remaining: 5.57 hours
+V Best model saved! (Val Acc: 31.18%)
+================================================================================
+
+Epoch 3/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 3.8374 | Train Acc: 32.21%
+Val Loss:   3.1108 | Val Acc:   45.47%
+Epoch Time: 6.89 min | Est. remaining: 5.40 hours
+V Best model saved! (Val Acc: 45.47%)
+================================================================================
+
+Epoch 4/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 3.1209 | Train Acc: 44.89%
+Val Loss:   2.5981 | Val Acc:   55.19%
+Epoch Time: 6.79 min | Est. remaining: 5.20 hours
+V Best model saved! (Val Acc: 55.19%)
+================================================================================
+
+Epoch 5/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 2.5620 | Train Acc: 55.53%
+Val Loss:   2.1857 | Val Acc:   63.62%
+Epoch Time: 6.69 min | Est. remaining: 5.01 hours
+V Best model saved! (Val Acc: 63.62%)
+================================================================================
+
+Epoch 6/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 2.1127 | Train Acc: 63.95%
+Val Loss:   1.7939 | Val Acc:   69.07%
+Epoch Time: 6.48 min | Est. remaining: 4.75 hours
+V Best model saved! (Val Acc: 69.07%)
+================================================================================
+
+Epoch 7/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 1.7407 | Train Acc: 70.77%
+Val Loss:   1.5834 | Val Acc:   73.02%
+Epoch Time: 6.59 min | Est. remaining: 4.72 hours
+V Best model saved! (Val Acc: 73.02%)
+================================================================================
+
+Epoch 8/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 1.4184 | Train Acc: 76.70%
+Val Loss:   1.3844 | Val Acc:   76.22%
+Epoch Time: 6.50 min | Est. remaining: 4.55 hours
+V Best model saved! (Val Acc: 76.22%)
+================================================================================
+
+Epoch 9/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 1.1783 | Train Acc: 80.81%
+Val Loss:   1.3056 | Val Acc:   77.26%
+Epoch Time: 6.91 min | Est. remaining: 4.72 hours
+V Best model saved! (Val Acc: 77.26%)
+================================================================================
+
+Epoch 10/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.9905 | Train Acc: 83.99%
+Val Loss:   1.2579 | Val Acc:   78.61%
+Epoch Time: 6.41 min | Est. remaining: 4.27 hours
+V Best model saved! (Val Acc: 78.61%)
+================================================================================
+
+Epoch 11/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.8269 | Train Acc: 86.57%
+Val Loss:   1.0672 | Val Acc:   80.25%
+Epoch Time: 6.45 min | Est. remaining: 4.20 hours
+V Best model saved! (Val Acc: 80.25%)
+================================================================================
+
+Epoch 12/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.7017 | Train Acc: 88.55%
+Val Loss:   1.0467 | Val Acc:   81.26%
+Epoch Time: 6.73 min | Est. remaining: 4.26 hours
+V Best model saved! (Val Acc: 81.26%)
+================================================================================
+
+Epoch 13/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.6084 | Train Acc: 89.92%
+Val Loss:   0.9406 | Val Acc:   82.46%
+Epoch Time: 6.87 min | Est. remaining: 4.24 hours
+V Best model saved! (Val Acc: 82.46%)
+================================================================================
+
+Epoch 14/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.5352 | Train Acc: 91.02%
+Val Loss:   0.8527 | Val Acc:   82.84%
+Epoch Time: 6.55 min | Est. remaining: 3.93 hours
+V Best model saved! (Val Acc: 82.84%)
+================================================================================
+
+Epoch 15/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.4723 | Train Acc: 91.88%
+Val Loss:   0.9145 | Val Acc:   82.78%
+Epoch Time: 6.50 min | Est. remaining: 3.79 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 16/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.4238 | Train Acc: 92.57%
+Val Loss:   0.9164 | Val Acc:   82.03%
+Epoch Time: 6.65 min | Est. remaining: 3.77 hours
+  EarlyStopping counter: 2/7
+================================================================================
+
+Epoch 17/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.3875 | Train Acc: 93.10%
+Val Loss:   0.8164 | Val Acc:   82.70%
+Epoch Time: 6.92 min | Est. remaining: 3.81 hours
+================================================================================
+
+Epoch 18/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.3526 | Train Acc: 93.62%
+Val Loss:   0.7936 | Val Acc:   83.39%
+Epoch Time: 6.87 min | Est. remaining: 3.66 hours
+V Best model saved! (Val Acc: 83.39%)
+================================================================================
+
+Epoch 19/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.3310 | Train Acc: 93.80%
+Val Loss:   0.7605 | Val Acc:   83.53%
+Epoch Time: 6.67 min | Est. remaining: 3.44 hours
+V Best model saved! (Val Acc: 83.53%)
+================================================================================
+
+Epoch 20/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.3083 | Train Acc: 94.09%
+Val Loss:   0.7978 | Val Acc:   83.43%
+Epoch Time: 6.81 min | Est. remaining: 3.40 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 21/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2884 | Train Acc: 94.37%
+Val Loss:   0.7470 | Val Acc:   83.74%
+Epoch Time: 6.93 min | Est. remaining: 3.35 hours
+V Best model saved! (Val Acc: 83.74%)
+================================================================================
+
+Epoch 22/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2744 | Train Acc: 94.60%
+Val Loss:   0.8045 | Val Acc:   82.20%
+Epoch Time: 8.46 min | Est. remaining: 3.95 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 23/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2579 | Train Acc: 94.82%
+Val Loss:   0.6913 | Val Acc:   84.56%
+Epoch Time: 10.05 min | Est. remaining: 4.52 hours
+V Best model saved! (Val Acc: 84.56%)
+================================================================================
+
+Epoch 24/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2485 | Train Acc: 94.93%
+Val Loss:   0.7374 | Val Acc:   83.72%
+Epoch Time: 5.85 min | Est. remaining: 2.53 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 25/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2379 | Train Acc: 95.08%
+Val Loss:   0.6838 | Val Acc:   84.32%
+Epoch Time: 5.92 min | Est. remaining: 2.46 hours
+================================================================================
+
+Epoch 26/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2298 | Train Acc: 95.20%
+Val Loss:   0.7368 | Val Acc:   83.90%
+Epoch Time: 5.89 min | Est. remaining: 2.35 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 27/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2256 | Train Acc: 95.23%
+Val Loss:   0.6844 | Val Acc:   84.63%
+Epoch Time: 5.90 min | Est. remaining: 2.26 hours
+V Best model saved! (Val Acc: 84.63%)
+  EarlyStopping counter: 2/7
+================================================================================
+
+Epoch 28/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2126 | Train Acc: 95.39%
+Val Loss:   0.6845 | Val Acc:   84.40%
+Epoch Time: 5.84 min | Est. remaining: 2.14 hours
+  EarlyStopping counter: 3/7
+================================================================================
+
+Epoch 29/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2122 | Train Acc: 95.41%
+Val Loss:   0.6889 | Val Acc:   84.32%
+Epoch Time: 5.87 min | Est. remaining: 2.05 hours
+  EarlyStopping counter: 4/7
+================================================================================
+
+Epoch 30/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.2035 | Train Acc: 95.49%
+Val Loss:   0.6537 | Val Acc:   84.70%
+Epoch Time: 5.88 min | Est. remaining: 1.96 hours
+V Best model saved! (Val Acc: 84.70%)
+================================================================================
+
+Epoch 31/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1958 | Train Acc: 95.72%
+Val Loss:   0.6492 | Val Acc:   84.78%
+Epoch Time: 5.89 min | Est. remaining: 1.87 hours
+V Best model saved! (Val Acc: 84.78%)
+================================================================================
+
+Epoch 32/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1923 | Train Acc: 95.73%
+Val Loss:   0.6368 | Val Acc:   85.01%
+Epoch Time: 5.88 min | Est. remaining: 1.76 hours
+V Best model saved! (Val Acc: 85.01%)
+================================================================================
+
+Epoch 33/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1825 | Train Acc: 95.99%
+Val Loss:   0.7704 | Val Acc:   82.20%
+Epoch Time: 5.89 min | Est. remaining: 1.67 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 34/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1807 | Train Acc: 95.92%
+Val Loss:   0.6509 | Val Acc:   84.64%
+Epoch Time: 5.89 min | Est. remaining: 1.57 hours
+  EarlyStopping counter: 2/7
+================================================================================
+
+Epoch 35/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1785 | Train Acc: 96.04%
+Val Loss:   0.6305 | Val Acc:   85.22%
+Epoch Time: 5.91 min | Est. remaining: 1.48 hours
+V Best model saved! (Val Acc: 85.22%)
+================================================================================
+
+Epoch 36/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1712 | Train Acc: 96.17%
+Val Loss:   0.6308 | Val Acc:   85.45%
+Epoch Time: 5.88 min | Est. remaining: 1.37 hours
+V Best model saved! (Val Acc: 85.45%)
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 37/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1721 | Train Acc: 96.01%
+Val Loss:   0.6273 | Val Acc:   85.06%
+Epoch Time: 5.89 min | Est. remaining: 1.28 hours
+================================================================================
+
+Epoch 38/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1687 | Train Acc: 96.09%
+Val Loss:   0.6175 | Val Acc:   85.66%
+Epoch Time: 5.89 min | Est. remaining: 1.18 hours
+V Best model saved! (Val Acc: 85.66%)
+================================================================================
+
+Epoch 39/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1614 | Train Acc: 96.28%
+Val Loss:   0.6111 | Val Acc:   85.54%
+Epoch Time: 5.89 min | Est. remaining: 1.08 hours
+================================================================================
+
+Epoch 40/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1614 | Train Acc: 96.16%
+Val Loss:   0.6413 | Val Acc:   85.01%
+Epoch Time: 5.88 min | Est. remaining: 0.98 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 41/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1550 | Train Acc: 96.36%
+Val Loss:   0.6025 | Val Acc:   85.76%
+Epoch Time: 5.89 min | Est. remaining: 0.88 hours
+V Best model saved! (Val Acc: 85.76%)
+================================================================================
+
+Epoch 42/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1517 | Train Acc: 96.39%
+Val Loss:   0.6005 | Val Acc:   85.89%
+Epoch Time: 5.88 min | Est. remaining: 0.78 hours
+V Best model saved! (Val Acc: 85.89%)
+================================================================================
+
+Epoch 43/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1496 | Train Acc: 96.40%
+Val Loss:   0.5984 | Val Acc:   85.68%
+Epoch Time: 5.89 min | Est. remaining: 0.69 hours
+================================================================================
+
+Epoch 44/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1438 | Train Acc: 96.58%
+Val Loss:   0.5986 | Val Acc:   85.53%
+Epoch Time: 5.85 min | Est. remaining: 0.59 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 45/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1447 | Train Acc: 96.51%
+Val Loss:   0.5691 | Val Acc:   86.60%
+Epoch Time: 5.93 min | Est. remaining: 0.49 hours
+V Best model saved! (Val Acc: 86.60%)
+================================================================================
+
+Epoch 46/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1423 | Train Acc: 96.62%
+Val Loss:   0.5894 | Val Acc:   85.91%
+Epoch Time: 5.91 min | Est. remaining: 0.39 hours
+  EarlyStopping counter: 1/7
+================================================================================
+
+Epoch 47/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1391 | Train Acc: 96.59%
+Val Loss:   0.5930 | Val Acc:   85.60%
+Epoch Time: 5.92 min | Est. remaining: 0.30 hours
+  EarlyStopping counter: 2/7
+================================================================================
+
+Epoch 48/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1375 | Train Acc: 96.72%
+Val Loss:   0.5958 | Val Acc:   85.80%
+Epoch Time: 5.89 min | Est. remaining: 0.20 hours
+  EarlyStopping counter: 3/7
+================================================================================
+
+Epoch 49/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1367 | Train Acc: 96.71%
+Val Loss:   0.5776 | Val Acc:   86.16%
+Epoch Time: 5.88 min | Est. remaining: 0.10 hours
+  EarlyStopping counter: 4/7
+================================================================================
+
+Epoch 50/50
+--------------------------------------------------------------------------------
+
+
+Train Loss: 0.1359 | Train Acc: 96.64%
+Val Loss:   0.5938 | Val Acc:   85.91%
+Epoch Time: 5.89 min | Est. remaining: 0.00 hours
+  EarlyStopping counter: 5/7
+================================================================================
+
+
+Training completed!
+Best validation accuracy: 86.60% (Epoch 45)
+Total epochs trained: 50
+Model saved to: voxceleb_cnn_lite_gpu.pth
+
+Best model loaded from voxceleb_cnn_lite_gpu.pth
+Model was saved at epoch 45
+Validation accuracy: 86.60%
+
+================================================================================
+EVALUATING MODEL ON VALIDATION SET
+================================================================================
+
+
+V Overall Validation Accuracy: 86.60%
+================================================================================
+WEIGHTED METRICS (Averaged across all classes)
+================================================================================
+Precision: 0.8717
+Recall:    0.8660
+F1 Score:  0.8641
+================================================================================
+
+MACRO METRICS (Unweighted average across all classes)
+================================================================================
+Precision: 0.8645
+Recall:    0.8323
+F1 Score:  0.8415
+================================================================================
+
+================================================================================
+PER-CLASS METRICS
+================================================================================
+
+Note: Showing metrics for classes with most samples in validation set
+
+ Class  Support  Precision   Recall  F1-Score
+    95      131   0.984615 0.977099  0.980843
+    19      118   0.966942 0.991525  0.979079
+   356       85   0.953488 0.964706  0.959064
+   202       80   0.886364 0.975000  0.928571
+   302       76   0.961039 0.973684  0.967320
+   387       73   0.896104 0.945205  0.920000
+   541       71   0.870130 0.943662  0.905405
+   241       69   0.957746 0.985507  0.971429
+   498       68   0.915493 0.955882  0.935252
+   285       68   0.985294 0.985294  0.985294
+
+================================================================================
+GENERATING CONFUSION MATRIX (Top 10 Classes)
+================================================================================
+
+Testing on: Spectograms\id10130\5hHu6Nuhj_4\00003.npy
+True speaker: id10130 (Label: 129)
+
+Top 5 Predictions:
+--------------------------------------------------
+V 1. Speaker: id10130 | Confidence: 90.07%
+  2. Speaker: id10152 | Confidence: 3.86%
+  3. Speaker: id10441 | Confidence: 0.71%
+  4. Speaker: id10479 | Confidence: 0.62%
+  5. Speaker: id10387 | Confidence: 0.56%
+
+
+Inference example saved to inference_example.png
+
+
+================================================================================
+TRAINING SUMMARY
+================================================================================
+
+Dataset:
+  Total classes: 605
+  Training samples: 58212
+  Validation samples: 14554
+
+Model:
+  Architecture: VGG-Style CNN
+  Total parameters: 34,448,893
+  Device: cuda (CPU)
+
+Training Configuration:
+  Epochs: 50
+  Batch size: 96
+  Learning rate: 0.0001
+  Dropout: 0.5
+
+Results:
+  Best validation accuracy: 86.60% (Epoch 45)
+  Final train accuracy: 96.64%
+  Final val accuracy: 85.91%
+  Total training time: 318.44 minutes
+
+Saved Files:
+  Model: voxceleb_cnn_lite_gpu.pth
+  Class mapping: class_to_idx.json
+  Training history: training_history.json
+  Plots: training_history.png, sample_spectrograms.png, inference_example.png
+
+================================================================================
